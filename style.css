@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 
-html,
-body {
+html, body {
   margin: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
@@ -29,12 +28,19 @@ h4 {
   font-weight: 300;
 }
 
-img {
-  display: block;
+.responsive-image {
+  width: 100%; 
+  height: auto; 
+  display: block; 
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .responsive-image {
+    width: auto; 
+    max-width: 100%; 
   }
 }
